@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="LearnGrow offers online courses to enhance your skills with expert instructors and certification options.">
+    <title>LearnGrow - Online Class</title>
+
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(rgb(28, 148, 148), rgb(11, 0, 0));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        .pricing {
+            padding: 4rem 10%;
+            background-color: #264653;
+            color: white;
+        }
+
+        .pricing h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem; /* Increased font size for better visibility */
+        }
+
+        .price-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Allow wrapping for more cards */
+            gap: 20px; /* Added gap for better spacing between cards */
+        }
+
+        .price-card {
+            background: #2a9d8f;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s; /* Add hover effect */
+        }
+
+        .price-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+
+        .price-btn {
+            background: white;
+            color: #264653;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s; /* Add transform for button */
+        }
+
+        .price-btn:hover {
+            background: #f4a261;
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        footer {
+            background: linear-gradient(rgb(28, 148, 148), rgb(11, 0, 0));
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .price-card {
+                width: 90%; /* Make cards full-width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Online Classes</h1>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <h2>Choose Your Plan</h2>
+        <div class="price-cards">
+            <div class="price-card">
+                <h3>Basic Plan</h3>
+                <p>₹499/month</p>
+                <p>Access to all basic courses</p>
+                <button class="price-btn">Buy</button>
+            </div>
+            <div class="price-card">
+                <h3>Pro Plan</h3>
+                <p>₹699/month</p>
+                <p>Access to all courses + Premium resources</p>
+                <button class="price-btn">Buy</button>
+            </div>
+            <div class="price-card">
+                <h3>Enterprise Plan</h3>
+                <p>₹999/month</p>
+                <p>Access for teams + Custom courses</p>
+                <button class="price-btn">Buy</button>
+            </div>
+            <div class="price-card">
+                <h3>Student Plan</h3>
+                <p>₹399/month</p>
+                <p>Special pricing for students with proof</p>
+                <button class="price-btn">Buy</button>
+            </div>
+            <div class="price-card">
+                <h3>Group Plan</h3>
+                <p>₹1,199/month</p>
+                <p>For groups of 5+ users</p>
+                <button class="price-btn">Buy</button>
+            </div>
+            <div class="price-card">
+                <h3>Yearly Plan</h3>
+                <p>₹1,999/year</p>
+                <p>Pay annually and save 20%</p>
+                <button class="price-btn">Buy</button>
+            </div>
+            <div class="price-card">
+                <h3>Premium Plan</h3>
+                <p>₹2,199/month</p>
+                <p>Access to all courses + One-on-one coaching</p>
+                <button class="price-btn">Buy</button>
+            </div>
+            <div class="price-card">
+                <h3>Corporate Plan</h3>
+                <p>Contact us for pricing</p>
+                <p>Custom solutions for businesses</p>
+                <button class="price-btn">Contact Us</button>
+            </div>
+            <div class="price-card">
+                <h3>Trial Plan</h3>
+                <p>Free for 7 days</p>
+                <p>Access to select courses to test our platform</p>
+                <button class="price-btn">Start Trial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LearnGrow. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

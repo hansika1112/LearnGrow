@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LearnGrow - Expand Your Skills</title>
+    
+    <!-- Fonts from Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS Styling -->
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Font and General Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* Header Area */
+        header {
+            background: linear-gradient(rgb(28, 148, 148), rgb(11, 0, 0));
+            color: #fff;
+            padding: 1.5rem 0;
+        }
+
+        header .site-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .imglogo{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .imglogo img{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        }
+        
+        .hero-btn {
+            background-color: #e9c46a;
+            color: #222;
+            padding: 10px 25px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-btn:hover {
+            background-color: #f4a261;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #e9c46a;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('./ailearn.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-align: center;
+            padding:  10px;
+            margin-top: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.90rem;
+            margin-bottom: 30px;
+        }
+        .hero h1:hover{
+            transform: scale(1.005);
+            color: red;
+
+        }
+        .hero p:hover{
+            transform: scale(1.005);
+            color: red;
+        }
+
+
+        /* Core Features Section */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            padding: 4rem 10%;
+            background-color: #f1f1f1;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+        .feature:hover{
+            transform: scale(1.05);
+        }
+        .feature a{
+            text-decoration: none;
+        }
+
+        .feature i {
+            font-size: 3rem;
+            color: #2a9d8f;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            color: #2a9d8f;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* Image Section */
+        .img-section {
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 10%;
+            gap: 2rem;
+         }
+
+         .img-container1 img, .img-container2 img {
+            width: 750px;
+            height: 420px;
+            object-fit: cover;
+            margin-top: 20px;
+            border-radius: 10px;
+         }
+         
+         .img-container1{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+         }
+
+         .img-container2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+         }
+
+         hr {
+            border: none;              
+            height: 2px;               
+            background-color: rgb(199, 178, 178);  
+            width: 100%;               
+            margin: 20px 0;            
+         }
+       
+        #imgh:hover{
+            transform: translateY(-10px);
+         }
+
+
+        #line1{
+            font-size: 20px;
+            margin-top: 10px;
+
+        }
+        #line1:hover{
+            transform: scale(1.005);
+            color: rgb(234, 80, 80);
+        }
+       
+
+        /* Footer Area */
+        footer {
+        background: linear-gradient(rgb(28, 148, 148), rgb(11, 0, 0));
+        color: #fff;
+        padding: 2rem 10%;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        flex: 1;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-contact,
+    .footer-social {
+        flex: 1;
+        margin: 0 20px;
+    }
+
+    .footer-contact h3,
+    .footer-social h3 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-social ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-social li {
+        margin-bottom: 10px;
+    }
+
+    .footer-social a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-social a:hover {
+        color: #e9c46a;
+    }
+
+    .footer-bottom {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+    .footer-contact a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+       
+        <div class="site-logo">LearnGrow</div>
+        <div class="imglogo">
+            <img src="./logo.jpg" alt="logo"> 
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="ourcourse.html">Courses</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html" class="hero-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Unleash Your Potential</h1>
+            <p>Start your journey to success with our carefully designed courses and expert guidance.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="courses">
+        <div class="feature"><a href="onliineclass.html">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Online Classes</h3>
+            <p>Access live sessions and recorded classes anytime, anywhere, from any device.</p>
+        </a>
+        </div>
+        <div class="feature">
+            <a href="expeteacher.html">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Experienced Teachers</h3>
+            <p>Learn from learngrow with years of industry experience and a passion for teaching.</p>
+        </a>
+        </div>
+        <div class="feature"><a href="certificate.html">
+            <i class="fas fa-trophy"></i>
+            <h3>Get Certified</h3>
+            <p>Earn certificates that showcase your achievements and knowledge to potential employers.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- 4-Image Section -->
+    <section class="img-section" id="images">
+        <div class="img-container1">
+            <img src="./flex.jpg" alt="Image 1" id="imgh">
+            <p id="line1">Our platform offers flexible learning schedules to suit your personal and professional life.
+                Our platform offers flexible learning schedules tailored to meet your individual needs, allowing you to balance your studies with personal and professional commitments. Whether you're a working professional, a busy parent, or a student, our courses are designed to fit seamlessly into your lifestyle. With on-demand classes and live sessions, you can learn at your own pace and access resources anytime, anywhere.
+            </p>
+            <hr>
+        </div>
+        <div class="img-container2">
+            <img src="./video.jpg" alt="Image 2" id="imgh">
+            <p id="line1">Access high-quality video content and interactive sessions from industry experts.
+                Our platform provides access to high-quality video content and interactive sessions led by industry experts, ensuring that you receive the most relevant and up-to-date knowledge in your field. Engage with dynamic lessons that blend theory and practical application, enabling you to grasp complex concepts easily. Through live Q&A sessions and hands-on workshops, you can interact directly with instructors, ask questions, and receive personalized feedback. This immersive learning experience is designed to foster deeper understanding and application of skills, setting you up for success in your professional journey.
+            </p>
+            <hr>
+        </div>
+        <div class="img-container1">
+            <img src="./teach.jpg" alt="Image 3" id="imgh">
+            <p id="line1">Engage with peers through forums and collaborative projects to enhance your learning.
+                Engage with peers through vibrant forums and collaborative projects, which are essential components of our learning platform. These interactive spaces foster a sense of community, allowing you to share ideas, ask questions, and receive diverse perspectives. Working on group projects enhances your teamwork and communication skills, preparing you for real-world challenges. Collaborating with fellow learners not only enriches your understanding of the material but also builds valuable relationships that can lead to networking opportunities. By engaging in discussions and peer reviews, you develop critical thinking and analytical skills, all while making learning a more enjoyable and dynamic experience.
+            </p>
+            <hr>
+        </div>
+        <div class="img-container2">
+            <img src="./certificate.jpg" alt="Image 4" id="imgh">
+            <p id="line1">Earn certifications that showcase your achievements and open new career opportunities.
+                Earn certifications that not only validate your skills but also serve as a testament to your dedication and hard work. Our courses are designed to equip you with in-demand knowledge, and upon completion, you'll receive a recognized certification that enhances your resume. These credentials are essential for standing out in today's competitive job market, giving you a significant edge over other candidates. Additionally, they can lead to new career opportunities, promotions, and increased earning potential. With our certification programs, you'll be better prepared to pursue your professional goals, demonstrate your expertise to potential employers, and establish yourself as a leader in your field.
+            </p><hr>
+        </div>
+
+    <!-- Additional Image Section 5 -->
+    <div class="img-container1">
+        <img src="./track.jpg" alt="Image 5" id="imgh">
+        <p id="line1">Track your progress and personal growth with our in-depth analytics and actionable insights. Monitor your achievements, identify areas for improvement, and set personalized goals. Our tools provide detailed reports and real-time feedback to help you stay motivated, measure success, and continuously refine your learning journey for optimal results.
+        </p>
+        <hr>
+    </div>
+
+    <!-- Additional Image Section 6 -->
+    <div class="img-container2">
+        <img src="./vibrant.jpg" alt="Image 6" id="imgh">
+        <p id="line1">Join a vibrant community of learners where collaboration and shared experiences fuel your motivation. Connect with peers from diverse backgrounds, engage in lively discussions, and exchange ideas. Participate in group activities and forums that foster a supportive environment. This sense of belonging encourages you to stay committed to your learning journey and celebrate collective achievements.
+        </p>
+        <hr>
+    </div>
+     <!-- Additional Image Section 7 -->
+     <div class="img-container1">
+        <img src="./help247.jpg" alt="Image 7" id="imgh">
+        <p id="line1">Receive round-the-clock support tailored to assist you throughout your learning journey. Our dedicated team is available 24/7 to address your questions, provide guidance, and offer technical assistance whenever you need it. Whether you're facing challenges or seeking advice, you can rely on our experts to ensure a smooth and enriching learning experience, empowering you to succeed at every step.
+        </p>
+        <hr>
+    </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>LearnGrow</h2>
+                <p>Empowering you to learn and grow.</p>
+            </div>
+            <div class="footer-contact">
+                <h3><a href="contact.html">Contact Us</a></h3>
+                <p>Email: support@learngrow.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LearnGrow Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript: Smooth Scrolling -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Us - LearnGrow</title>
+    
+    
+    <!-- Custom CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #444;
+            background-color: #f3f4f6;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(rgb(28, 148, 148), rgb(11, 0, 0));
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header .site-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* About */
+        .about-section {
+            padding: 4rem 10%;
+            background-color: #ffffff;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #2a9d8f;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-content {
+            text-align: left;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content .quote {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #264653;
+            margin: 1rem 0;
+        }
+
+        /* Vision & Mission  */
+        .vision-mission-section {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .vision-mission-box1,
+        .vision-mission-box2 {
+            flex: 1;
+            background-color: #f9fafc;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .vision-mission-box1 h3,
+        .vision-mission-box2 h3 {
+            font-size: 1.75rem;
+            color: #264653;
+            margin-bottom: 1rem;
+        }
+
+        .vision-mission-box1 p,
+        .vision-mission-box2 p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .vision-mission-box1:hover,
+        .vision-mission-box2:hover {
+            transform: scale(1.05);
+            background-color:  #f5f0ef;
+        }
+
+        /* Team  */
+        .team-section {
+            margin-top: 4rem;
+        }
+
+        .team-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2a9d8f;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .team-member h4 {
+            font-size: 1.25rem;
+            color: #264653;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Footer*/
+        footer {
+            background: linear-gradient(rgb(28, 148, 148), rgb(11, 0, 0));
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .vision-mission-section {
+                flex-direction: column;
+            }
+
+            .about-content {
+                text-align: center;
+            }
+        }
+        #foot a{
+            transition: color 0.3s;
+            text-decoration: none;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header  -->
+    <header>
+        <div class="site-logo">LearnGrow</div>
+    </header>
+
+    <!-- About  -->
+    <section class="about-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Welcome to LearnGrow, a leading platform for online education. We are dedicated to providing high-quality, accessible, and affordable learning opportunities for people around the world. Our goal is to empower individuals through knowledge and skill development, enabling them to achieve their professional and personal goals.</p>
+            <p class="quote">"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</p>
+            <p>At LearnGrow, we believe in fostering a community of learners who are curious, driven, and passionate about growing their potential. Our courses are designed by experts and tailored to meet the needs of learners at different levels, from beginners to advanced professionals.</p>
+        </div>
+
+        <!-- Vision & Mission -->
+        <div class="vision-mission-section">
+            <div class="vision-mission-box1">
+                <h3>Our Vision</h3>
+                <p>Our vision is to create a world where everyone has access to the education they need to reach their full potential. We strive to break down barriers to learning, making it easy for people from all walks of life to learn new skills, change careers, or advance in their current professions.</p>
+            </div>
+            <div class="vision-mission-box2">
+                <h3>Our Mission</h3>
+                <p>Our mission is to provide high-quality, affordable, and flexible education that empowers individuals to learn and grow at their own pace. We are committed to delivering an exceptional learning experience that combines cutting-edge technology, expert instruction, and a supportive community of learners.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team  -->
+    <section class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="./ceofounder.jpg" alt="Jane Doe">
+                <h4>Rishi Choudhary</h4>
+                <p>CEO & Founder</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="chief.jpg" alt="John Smith">
+                <h4>Kunal Rawat</h4>
+                <p>Chief Technology Officer</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="./director.jpg" alt="Sarah Lee">
+                <h4>Manshi Singh</h4>
+                <p>Director of Education</p>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <img src="./marketingman.jpg" alt="Michael Brown">
+                <h4>Ronit Jha</h4>
+                <p>Marketing Manager</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 LearnGrow. All Rights Reserved.</p>
+        <p id="foot"><a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us - LearnGrow</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #444;
+            background-color: #f3f4f6;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(rgb(28, 148, 148), rgb(11, 0, 0));
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header .site-logo {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 3rem 10%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2a9d8f;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        /* Form Styles */
+        .contact-form {
+            flex: 2;
+            padding: 2rem;
+            background-color: #f9fafc;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: #444;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #2a9d8f;
+        }
+
+        .contact-form button {
+            padding: 12px 25px;
+            background-color: #2a9d8f;
+            color: #fff;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background-color: #21867a;
+        }
+
+        /* Contact Information Styles */
+        .contact-info {
+            flex: 1;
+            padding: 2rem;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .info-box {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-box span {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2a9d8f;
+            margin-right: 15px;
+        }
+
+        .info-box p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .info-box p a {
+            color: #264653;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .info-box p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: #2a9d8f;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #e76f51;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="site-logo">LearnGrow</div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-wrapper">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="info-box">
+                    <span>Phone:</span>
+                    <p><a href="tel:1234567890">(123) 456-7890</a></p>
+                </div>
+                <div class="info-box">
+                    <span>Email:</span>
+                    <p><a href="mailto:info@learngrow.com">info@learngrow.com</a></p>
+                </div>
+                <div class="info-box">
+                    <span>Address:</span>
+                    <p>123 Education Street, City, Country</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
